@@ -11,6 +11,14 @@ h1 {
   border-radius: 5px;
 }
 
+.captions {
+  margin: 0 auto;
+  padding: 20px;
+  padding-top: 0;
+  max-width: 700px;
+  font-size: 15px;
+}
+
 .open_source {
   text-decoration: none;
 }
