@@ -26,10 +26,12 @@ body {
 
 .overview #celsius {
   font-size: 22px;
+  text-decoration: none;
 }
 
 .overview #farenheit {
   font-size: 22px;
+  text-decoration: none;
 }
 
 .overview h1 {
