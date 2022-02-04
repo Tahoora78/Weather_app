@@ -10,105 +10,107 @@
       crossorigin="anonymous"
     />
 
-    <title>Weather procrastination</title>
-    <link rel="stylesheet" href="src/styles.css" />
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="src/style.css" />
+
+    <title>Weather-App</title>
   </head>
   <body>
-    <div class="total-container">
-      <form class="search">
-        <input
-          type="text"
-          placeholder="Enter a city"
-          class="enter-city"
-          id="input"
-        />
-        <input type="submit" value="Search" class="search_btn" />
-        <button class="current">current</button>
-      </form>
-      <div class="container_">
-        <div class="row">
-          <div class="col">
-            <div class="today">
+    <div class="container">
+      <div class="weather-app">
+        <div class="search">
+          <form id="search-form" class="mb-3">
+            <div class="row">
+              <div class="col-9">
+                <input
+                  type="search"
+                  placeholder="Type a city..."
+                  class="form-control"
+                  id="city-input"
+                />
+              </div>
+              <div class="col-3">
+                <input
+                  type="submit"
+                  value="Search"
+                  class="btn btn-primary w-100"
+                />
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="overview">
+          <div class="row">
+            <div class="col-6">
               <h1 id="city-name">New York</h1>
-              <h2 class="current-date">Today | Monday</h2>
-              <p class="status_image">
-                ☀️
-                <span class="temprature">
-                  <span id="temp"> 17</span> <span id="celsius">°C</span>|<span
-                    id="farenheit"
-                    >°F</span
-                  >
-                </span>
-              </p>
-              <div class="caption">Mostly sunny</div>
-              <div class="tip">Don't forget the sunscreen!</div>
+              <ul>
+                <li id="date-description">Friday 12:28, moderate rain</li>
+                <li>Humidity: <span id="humidity">96</span>%</li>
+                <li>Wind: <span id="wind">4.6</span> km/h</li>
+              </ul>
+            </div>
+            <div class="col-6">
+              <img
+                src="https://ssl.gstatic.com/onebox/weather/64/sunny.png"
+                ,
+                alt="image"
+                id="icon"
+              />
+              <span id="temperature">11</span>
+              <a href="#" id="celsius" class="active">°C</a> |
+              <a href="#" id="farenheit">°F</a>
             </div>
           </div>
-          <div class="col">
-            <p class="details">
-              Precipitation: 0%
-              <br />
-              Humidity: 41%
-              <br />
-              Wind: 14 km/h
-            </p>
+        </div>
+        <div class="other-days">
+          <div class="row">
+            <div class="col">
+              <p class="weather-temprature">
+                Tue <br />
+                🌦️ <br />
+                11° 3°
+              </p>
+            </div>
+
+            <div class="col">
+              <p class="weather-temprature">
+                Wed <br />
+                🌧️ <br />
+                12° 11°
+              </p>
+            </div>
+
+            <div class="col">
+              <p class="weather-temprature">
+                Thu <br />
+                🌩️ <br />
+                15° 12°
+              </p>
+            </div>
+
+            <div class="col">
+              <p class="weather-temprature">
+                Fri <br />
+                🌦️ <br />
+                6° 1°
+              </p>
+            </div>
+
+            <div class="col">
+              <p class="weather-temprature">
+                Sat <br />
+                🌤️ <br />
+                6° 3°
+              </p>
+            </div>
           </div>
         </div>
       </div>
-      <div class="container">
-        <div class="row">
-          <div class="col">
-            <p class="weather-temprature">
-              Tue <br />
-              🌦️ <br />
-              11° 3°
-            </p>
-          </div>
-
-          <div class="col">
-            <p class="weather-temprature">
-              Wed <br />
-              🌧️ <br />
-              12° 11°
-            </p>
-          </div>
-
-          <div class="col">
-            <p class="weather-temprature">
-              Thu <br />
-              🌩️ <br />
-              15° 12°
-            </p>
-          </div>
-
-          <div class="col">
-            <p class="weather-temprature">
-              Fri <br />
-              🌦️ <br />
-              6° 1°
-            </p>
-          </div>
-
-          <div class="col">
-            <p class="weather-temprature">
-              Sat <br />
-              🌤️ <br />
-              6° 3°
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <p class="captions">
-      <a
-        class="open_source"
-        href="https://github.com/Tahoora78/Weather_app"
-        target="_blank"
-        >Open-source code</a
+      <a href="https://github.com/Tahoora78/Weather_app" target="_blank">
+        open-source code</a
       >
       by Tahoora Majlesi
-    </p>
+    </div>
     <script src="src/script.js"></script>
   </body>
 </html>

@@ -1,0 +1,69 @@
+body {
+  font-family: arial, sans-serif;
+  background: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+}
+
+.container {
+  max-width: 800px;
+}
+
+.weather-app {
+  margin-top: 20px;
+  margin: 30px auto;
+  border: 2px solid rgb(158, 158, 189);
+  border-radius: 5px;
+  color: rgb(76, 76, 138);
+  background-color: rgb(163, 204, 204);
+  padding: 25px;
+  margin-bottom: 0;
+}
+
+.overview ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.overview #celsius {
+  font-size: 22px;
+}
+
+.overview #farenheit {
+  font-size: 22px;
+}
+
+.overview h1 {
+  font-weight: 550;
+}
+
+.other-days {
+  border: 2px solid rgb(166, 221, 221);
+  padding-left: 70px;
+  padding-top: 20px;
+  margin-top: 20px;
+  border-radius: 5px;
+  background-color: rgb(191, 209, 209);
+}
+
+#temperature {
+  font-size: 100px;
+  font-weight: 580;
+}
+
+img {
+  height: 156px;
+  width: 156px;
+  position: relative;
+  top: -25px;
+}
+
+.active {
+  text-decoration: none;
+  color: rgb(76, 76, 138);
+  cursor: default;
+}
+
+.active:hover {
+  text-decoration: none;
+  color: rgb(76, 76, 138);
+}
