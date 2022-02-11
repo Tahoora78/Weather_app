@@ -1,6 +1,9 @@
+
+
 body {
   font-family: arial, sans-serif;
-  background: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+  background: url("https://wallpaperaccess.com/full/1540001.jpg") no-repeat;
+  background-size: cover;
 }
 
 .container {
@@ -36,6 +39,7 @@ body {
 
 .overview h1 {
   font-weight: 550;
+  opacity: 0.9;
 }
 
 .weather-forcast {
@@ -87,4 +91,18 @@ body {
 
 .weather-forcast {
   margin-top: 20px;
+}
+
+.description {
+  font-size: 20px;
+  font-weight: 400;
+  opacity: 0.8;
+}
+
+.developer {
+  color:  aquamarine;
+}
+
+.developer a {
+  color:  rgb(23, 185, 190);
 }

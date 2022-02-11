@@ -17,6 +17,7 @@
   </head>
   <body>
     <div class="container">
+      
       <div class="weather-app">
         <div class="search">
           <form id="search-form" class="mb-3">
@@ -43,7 +44,7 @@
           <div class="row">
             <div class="col-6">
               <h1 id="city-name">New York</h1>
-              <ul>
+              <ul class="description">
                 <li id="date-description">Friday 12:28, moderate rain</li>
                 <li>Humidity: <span id="humidity">96</span>%</li>
                 <li>Wind: <span id="wind">4.6</span> km/h</li>
@@ -67,11 +68,13 @@
           </div>
         </div>
       </div>
-      <a href="https://github.com/Tahoora78/Weather_app" target="_blank">
+      <span class="developer">
+        <a href="https://github.com/Tahoora78/Weather_app" target="_blank">
         open-source code</a
-      >
-      by Tahoora Majlesi
-    </div>
+        >
+        by Tahoora Majlesi
+      </span>
+      </div>
     <script src="src/script.js"></script>
   </body>
 </html>
