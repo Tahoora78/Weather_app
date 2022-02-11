@@ -38,23 +38,37 @@ body {
   font-weight: 550;
 }
 
-.other-days {
+.weather-forcast {
+  padding-top: 15px;
+  padding-bottom: 15px;
   border: 2px solid rgb(166, 221, 221);
-  padding-left: 70px;
-  padding-top: 20px;
-  margin-top: 20px;
   border-radius: 5px;
   background-color: rgb(191, 209, 209);
+  text-align: center;
+  color: rgb(76, 76, 138);
+  font-weight: 550;
+  font-size: 20px;
 }
+
+.weather-forcast .weather-forcast-date {
+  opacity: 0.8;
+}
+
+.weather-forcast .weather-forcast-temp-min {
+  opacity: 0.7;
+  font-weight: 550;
+}
+
+
 
 #temperature {
-  font-size: 100px;
-  font-weight: 580;
+  font-size: 110px;
+  font-weight: 570;
 }
 
-img {
-  height: 156px;
-  width: 156px;
+.overview img {
+  height: 140px;
+  width: 140px;
   position: relative;
   top: -25px;
 }
@@ -68,4 +82,9 @@ img {
 .active:hover {
   text-decoration: none;
   color: rgb(76, 76, 138);
+}
+
+
+.weather-forcast {
+  margin-top: 20px;
 }
